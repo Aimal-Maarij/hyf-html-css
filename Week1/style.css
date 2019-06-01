@@ -1,0 +1,182 @@
+
+  body {
+    
+    max-width: 170ch;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+
+#header-container {
+ 
+  display: flex;
+  background-color: #000080;
+  justify-content: center;
+  
+  
+  
+}
+
+
+  #photo-container {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+
+  
+  
+}
+
+
+#profile-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 205px;
+  border: 1px grey solid;
+  margin-right: 12rem;
+}
+
+
+#header-name-container {
+  
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 50px;
+  padding-top: 40px;
+  
+}
+  
+  
+
+.main-container {
+  display: flex;
+  align-items: stretch;
+  border-top: 2px white solid;
+
+  
+    
+  
+}
+
+.main-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  padding: 20px;
+  text-align: left;
+  line-height: 45px;
+  font-size: 15px;
+
+  
+}
+
+
+
+
+#left-container{
+  flex-grow: 0.5;
+  background: #4268f4;
+  padding: 20px;
+
+
+  }
+
+
+.right-container {
+  flex-grow: 1.6;
+
+}
+
+
+  
+ ul#hobbies li { 
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 12px;
+    padding-right: 50px
+    
+    
+    
+    
+}
+
+
+#profile-paragraph{
+  margin-left: 30px;
+  font-size: 18px;
+  color: black;
+  }
+
+a {
+color: black;}
+a:hover {
+color: white;}
+
+
+ul {
+  color: black;
+  font-size: 18px;
+  }
+
+h1 {
+  text-align: center;
+  padding: 5px;
+  margin: 1px;
+  text-shadow: 1px 1px grey;
+
+}
+
+
+hr {
+  border: 2px solid white;
+}
+
+p {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+footer {
+background-color: #000080;
+color:white;
+display: flex;
+}
+
+
+#resouces-list li {
+    display: inline;
+    color: white;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 20px
+}
+
+#resouces-list li a {
+	color: white;
+    
+}
+
+#resouces-list li a:hover{
+	color: black;
+	font-size: 22px;
+	background: white;
+}
+
+
+#footer-text{
+	color: white;
+	font-size: 22px;
+	text-decoration: underline;
+	padding-left: 12px;
+	display: flex;
+	
+}
+
+  
+
+  
