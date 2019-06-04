@@ -1,0 +1,402 @@
+
+html {
+    
+    margin-top: 42px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: silver;
+    background-image: url("https://i.gifer.com/MPWa.gif");
+}
+
+@media screen and (max-width: 820px){
+    html {
+        background-image: none;
+    }
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+    margin: 0px;
+    
+}
+h1 {
+    font-size: 35px;
+    text-align: center;
+    font-family: Impact, fantasy;   
+}
+
+
+#grid-floats {
+    list-style: none;
+    background-color: rgba(2, 135, 168, 0.979);
+    width: 100%;
+    padding: 0px;
+    border-top: 25px red solid;
+    border-bottom: 5px red solid;
+}
+
+#grid-floats::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+#grid-floats .grid-item {
+    position: relative;
+    border: 2px rgb(15, 225, 50, 0.88);
+    width: 290px;
+    height: 290px;
+    float: left;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5%;
+    box-shadow: 1px -1px 8px #CCC;
+    background-color: rgb(15, 225, 50, 0.2);
+}
+
+#grid-floats :nth-child(1) {
+      width: 638px;
+}
+
+
+
+#grid-floats :nth-child(1) h3 {
+    font-size: 35px;
+}
+
+#grid-floats :nth-child(1) img {
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+}
+
+#grid-floats :nth-child(1) img:hover {
+    transform: scale(3)
+}
+
+
+
+
+.grid-item img {
+    -webkit-transition: .5s;
+      transition: .5s;
+      width: 70px;
+      height: 70px;
+      display: block;
+      margin-left: 40%;
+}
+
+img:hover {
+  transform: scale(4)
+  }
+
+#grid-flex {
+      background-color: pink;
+      display: block;
+}
+
+#grid-flex .grid-item{
+    color: red;
+    display: inline-block;
+}
+
+h3 {
+    
+    text-align: left;
+    color: white;
+    font-size: 14px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/*-------------------------floats media quries for tablet-----------------------*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #grid-floats .grid-item {
+        position: relative;
+        border: 1px red solid;
+        width: 180px;
+        height: 180px;
+        padding: 5px;
+        margin: 8px;
+    }
+
+    #grid-floats :nth-child(1) {
+        width: 285px; 
+    }
+
+    #grid-floats :nth-child(2) {
+        width: 285px;  
+    }   
+   
+    #grid-floats .grid-item h3 {
+        font-size: 12px;
+        padding-left: 10px;
+        clear: both; 
+    }
+    
+    #grid-floats .grid-item p {
+        font-size: 8px; 
+    }
+
+    #grid-floats .grid-item img {
+        width: 80px;
+        height: 80px;
+        margin-left: 30%;
+        -webkit-transition: .5s;
+    }
+
+    #grid-floats .grid-item img:hover {
+        transform: scale(4) 
+    }
+
+}
+
+
+/* -------------------floats media quries for mobile---------------------*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #grid-floats .grid-item {
+        position: relative;
+        border: 1px red solid;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        margin: 8px;
+        }
+
+    #grid-floats :nth-child(1) {
+        width: 228px; 
+    }
+        
+    #grid-floats .grid-item h3 {
+        font-size: 6px;
+        padding-left: 5px; 
+        }
+
+    #grid-floats .grid-item p {
+        font-size: 5px; 
+    }
+
+    #grid-floats .grid-item img {
+        width: 30px;
+        height: 30px;
+        margin-left: 40%;
+        -webkit-transition: .5s;
+    }
+
+    #grid-floats .grid-item img:hover {
+        transform: scale(3)
+
+    }
+
+}
+
+
+/* -----------------------flexbox section -------------------------------*/
+
+#grid-flex {
+    display: flex;
+    padding: 0px;
+    flex-flow: row wrap; 
+    border-top: 25px red solid;
+    border-bottom: 5px red solid;
+ }
+
+#grid-flex .grid-item {
+    border: 2px black solid;
+    display: block;
+    align-content: flex-start;
+    height: 300px;
+    width: 300px;
+    margin-left: 8px;
+    margin-right:12px;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    flex-wrap: nowrap;
+    color: black;
+    text-align: center;
+    box-shadow: 1px -1px 8px rgb(59, 53, 53);
+}
+
+#grid-flex :nth-child(1) {
+    flex-basis: 646px; 
+}
+
+#grid-flex :nth-child(1) h3 {
+    font-size: 35px;
+    background-color: black;
+    margin-top: 15px;
+    text-align: center;
+}   
+
+#grid-flex :nth-child(1) p {
+    font-size: 22px;
+    color:black;
+    text-align: center;
+}
+
+#grid-flex h3 {
+    background-color: black;
+    line-height: 2em;
+    text-align: center;
+}
+
+#grid-flex :nth-child(1) img {
+    width: 100px;
+    height: 100px;
+    margin-left: 70%;
+}
+
+#grid-flex :nth-child(1) img:hover {
+    transform: scale(3) 
+}
+
+#grid-flex .grid-item p {
+        font-size: 17px; 
+}
+
+
+
+
+/*-------------------------flexbox media quries for tablet-----------------------*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    #grid-flex {
+        display: flex;
+        padding: 0px;
+    }
+        
+        
+    #grid-flex .grid-item {
+        border: 1px black solid;
+        height: 170px;
+        width: 170px;
+    }
+
+    #grid-flex :nth-child(1) {
+        flex-basis: 41%; 
+    }
+
+     #grid-flex :nth-child(2) {
+        flex-basis: 41%; 
+    }
+
+    #grid-flex .grid-item h3 {
+        font-size: 10px;
+        padding-left: 10px;
+        line-height: 20px; 
+    }
+        
+    #grid-flex .grid-item p {
+        font-size: 9px; 
+    }
+
+    #grid-flex .grid-item img {
+        width: 50px;
+        height: 50px;
+        margin-left: 30%;
+        -webkit-transition: .5s;
+    }
+
+    #grid-flex .grid-item img:hover {
+        transform: scale(3); 
+    }
+
+}
+
+
+
+
+/* -------------------flexbox media quries for mobile---------------------*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #grid-flex {
+        display: flex;
+        padding: 0px;
+        
+    }
+           
+
+    #grid-flex .grid-item {
+        border: 1px black solid;
+        height: 100px;
+        width: 100px;
+    }
+
+    #grid-flex :nth-child(1) {
+        flex-basis: 100%; 
+    }
+          
+    #grid-flex .grid-item h3 {
+        font-size: 5px;
+        padding-left: 10px; 
+        margin-top: 0px;
+    }
+        
+    #grid-flex .grid-item p {
+        font-size: 5px; 
+    }
+
+        
+
+    #grid-flex .grid-item img {
+        width: 50px;
+        height: 50px;
+        margin-left: 27%;
+        -webkit-transition: .5s;
+    }
+
+    #grid-flex .grid-item img:hover {
+         transform: scale(3) 
+    }
+
+    #grid-flex .grid-item:nth-child(1) img {
+            width: 55px;
+            height: 55px;
+            margin-left: 35%;
+            -webkit-transition: .5s;
+    }
+    
+    #grid-flex .grid-item img:hover {
+            transform: scale(2) 
+    }
+            
+    #grid-flex .grid-item img {
+            width: 50px;
+            height: 50px;
+            margin-left: 27%;
+            -webkit-transition: .5s;
+    }
+        
+    #grid-flex .grid-item img:hover {
+            transform: scale(2); 
+    }
+
+  }
