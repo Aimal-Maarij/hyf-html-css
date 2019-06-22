@@ -1,0 +1,304 @@
+body {
+    background-color : white;
+    }
+    #logo-header {
+    display : flex;
+    position : relative;
+    justify-content : center;
+    justify-items : center;
+    margin-top : -85px;
+    padding-left : 50px;
+    }
+    #logo {
+    display : inline-block;
+    margin-left : 90px;
+    margin-bottom : -125px;
+    margin-top : -40px;
+    }
+    #nav {
+    position : relative;
+    background-color : #01689b;
+    margin-left : -15px;
+    margin-right : -15px;
+    height : 60px;
+    display : grid;
+    line-height : 0.8;
+    font-weight : 500;
+    font-size : 13px;
+    font-family : sans-serif;
+    }
+    #nav-home-button {
+    align-self : center;
+    justify-self : left;
+    padding-left : 16%;
+    position : absolute;
+    }
+    #nav-home-button > a {
+    color : white;
+    font-size : 25px;
+    text-decoration : none;
+    }
+    #nav-home-button > a:hover {
+    text-decoration : underline;
+    }
+    .nav {
+    border-bottom : 1px solid #EAEAEB;
+    text-align : right;
+    height : 70px;
+    line-height : 70px;
+    position : absolute;
+    display : inline-block;
+    margin-left : 45%;
+    }
+    .menu {
+    margin : 0 30px 0 0;
+    }
+    .menu a {
+    clear : both;
+    text-decoration : none;
+    color : white;
+    margin : 0 10px;
+    line-height : 75px;
+    font-size : 16px;
+    }
+    .menu a:hover {
+    text-decoration : underline;
+    }
+    label {
+    margin : 0 40px 40px 0;
+    margin-right : 50%;
+    font-size : 35px;
+    line-height : 70px;
+    display : none;
+    width : 26px;
+    float : right;
+    }
+    #toggle {
+    display : none;
+    }
+    #baner-list-container > ul > li > a:hover {
+    text-decoration : underline;
+    }
+    .nav-list a {
+    display : block;
+    color : white;
+    text-align : right;
+    padding : 16px;
+    text-decoration : none;
+    }
+    .nav-list a:hover {
+    text-decoration : underline;
+    }
+    #banner {
+    background-image : url("images/banner.jpg");
+    background-size : cover;
+    margin-left : -15px;
+    margin-right : -15px;
+    background-repeat : no-repeat;
+    display : grid;
+    position : relative;
+    height : 250px;
+    }
+    #baner-list-container > ul {
+    background-color : white;
+    list-style-type : none;
+    position : absolute;
+    left : 12%;
+    display : block;
+    padding : 25px;
+    padding-top : 15px;
+    padding-bottom : 15px;
+    width : 250px;
+    }
+    #baner-list-container > ul > li > a {
+    color : #01689b;
+    text-decoration : none;
+    }
+    #baner-list-container > ul > li::before {
+    position : absolute;
+    content : "";
+    display : inline-block;
+    width : 0.2em;
+    height : 0.2em;
+    border-right : 0.2em solid #01689b;
+    border-top : 0.2em solid #01689b;
+    transform : rotate(45deg);
+    margin-right : 0.5em;
+    left : 8px;
+    margin-top : 5px;
+    }
+    #search-box-container {
+    display : inline-flex;
+    position : absolute;
+    left : 55%;
+    background-color : black;
+    font-size : 70%;
+    top : 8%;
+    width : 25%;
+    line-height : 25px;
+    }
+    #search-box-container > input[type="text"] {
+    font-size : 15px;
+    border : white solid 1px;
+    float : left;
+    width : 100%;
+    padding : 5px;
+    background : #f1f1f1;
+    }
+    #search-box-container > button {
+    background : black;
+    color : white;
+    font-size : 30px;
+    border : black solid 1px;
+    cursor : pointer;
+    }
+    #copy-right-text {
+    position : absolute;
+    color : white;
+    left : 3%;
+    top : 80%;
+    }
+    #first-container {
+    background : #f3f3f3;
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+    grid-template-rows : 1fr 1fr 1fr;
+    gap : 4%;
+    align-items : start;
+    margin-bottom : 5%;
+    padding : 3%;
+    padding-left : 150px;
+    padding-right : 150px;
+    }
+    #second-container {
+    background-color : white;
+    }
+    #first-container-wrapper {
+    margin-left : 50px;
+    }
+    hr {
+    border-top : 0.70px solid rgb(199 197 197 / 0.555);
+    margin-left : 150px;
+    margin-right : 150px;
+    color : rgb(255 249 249 / 0.63);
+    }
+    li {
+    list-style-type : none;
+    }
+    .sections-img {
+    width : 100%;
+    height : 70%;
+    }
+    #spotlight {
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-template-rows : 1fr;
+    gap : 4%;
+    align-items : start;
+    margin-bottom : 3%;
+    padding : 3%;
+    padding-left : 150px;
+    padding-right : 150px;
+    }
+    #news {
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-template-rows : 1fr 1fr;
+    gap : 4%;
+    align-items : start;
+    margin-bottom : 5%;
+    padding-left : 150px;
+    padding-right : 150px;
+    }
+    h3 {
+    color : #315696;
+    }
+    .sectionts-title {
+    padding-left : 150px;
+    }
+    #more {
+    color : black;
+    padding-left : 150px;
+    padding-right : 150px;
+    }
+    h3:hover {
+    text-decoration : underline;
+    }
+    a:link {
+    text-decoration : none;
+    }
+    .subnews p {
+    color : black;
+    }
+    p > .date {
+    font-weight : 900;
+    }
+    a:visited h3 {
+    color : #6D7275;
+    }
+    a:hover h3, a:hover #more {
+    text-decoration : underline;
+    color : #315696;
+    }
+    #contact {
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-template-rows : 1fr;
+    justify-items : end;
+    gap : 4%;
+    font-size : 20px;
+    margin : 3%;
+    margin-left : 6%;
+    }
+    #contact > div {
+    border : rgb(50 115 177) groove 1px;
+    align-self : center;
+    padding : 5%;
+    }
+    #contact2 {
+    background-color : rgb(1 104 155);
+    margin-left : -15px;
+    margin-right : -15px;
+    display : flex;
+    justify-content : space-around;
+    color : #ffffff;
+    font-size : 20px;
+    align-content : flex-end;
+    }
+    #contact2 a {
+    color : #ffffff;
+    font-size : 15px;
+    text-decoration : none;
+    }
+    #contact2 a:hover {
+    text-decoration : underline;
+    }
+    #contact2 > h3 {
+    text-decoration : none;
+    color : white;
+    display : none;
+    }
+    footer ul li {
+    list-style : none;
+    }
+    #contact2 ul li:first-child {
+    font-size : 25px;
+    font-weight : bolder;
+    }
+    .language li {
+    display : inline;
+    padding : 10px;
+    border : rgb(121 117 117) solid 1px;
+    margin-left : 1%;
+    align-content : center;
+    }
+    .language li:hover {
+    border : none;
+    }
+    .language {
+    display : inline-flex;
+    flex-flow : nowrap;
+    align-content : center;
+    margin-left : 30%;
+    font-size : 12px;
+    }
